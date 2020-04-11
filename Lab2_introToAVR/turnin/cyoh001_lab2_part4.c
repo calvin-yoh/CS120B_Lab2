@@ -1,5 +1,5 @@
 /*	Author: cyoh001
- *  Partner(s) Name: 
+ *  Partner(s) Name:
  *	Lab Section 22
  *	Assignment: Lab #  Exercise #
  *	Exercise Description: [optional - include for your own benefit]
@@ -24,10 +24,10 @@ int main(void) {
 	unsigned char totalWeight = 0x00;
 	unsigned char tempVal = 0x00;
 
-	while(1){
-		weightA = PORTA;
-		weightB = PORTB;
-		weightC = PORTC;
+	while (1) {
+		weightA = PINA;
+		weightB = PINB;
+		weightC = PINC;
 		totalWeight = weightA + weightB + weightC;
 		if (totalWeight > 0x8C)
 		{
@@ -51,4 +51,3 @@ int main(void) {
 	}
 	return 0;
 }
-	
