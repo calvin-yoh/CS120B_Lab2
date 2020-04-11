@@ -46,6 +46,10 @@ int main(void) {
 			{
 				tempVal = 0x02;
 			}
+			else
+			{
+				tempVal = 0x00;
+			}
 		}
 		PORTD = totalWeight | tempVal;
 	}
