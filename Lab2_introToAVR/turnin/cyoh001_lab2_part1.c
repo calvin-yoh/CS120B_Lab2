@@ -18,7 +18,7 @@ int main(void) {
 	unsigned char tmpB = 0x00; // Temporary variable to hold the value of B
 	unsigned char tmpA = 0x00;
 	while(1){
-		tmpA = PINA & 0xFF;
+		tmpA = PINA;
 		if(tmpA == 0x01)
 		{
 			tmpB = 0x01; 
