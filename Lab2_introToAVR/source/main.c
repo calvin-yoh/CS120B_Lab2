@@ -25,9 +25,9 @@ int main(void) {
 	unsigned char tempVal = 0x00;
 
 	while (1) {
-		weightA = PORTA;
-		weightB = PORTB;
-		weightC = PORTC;
+		weightA = PINA;
+		weightB = PINB;
+		weightC = PINC;
 		totalWeight = weightA + weightB + weightC;
 		if (totalWeight > 0x8C)
 		{
